@@ -1,0 +1,89 @@
+{% set posts = __SELF__.posts %}
+
+<!-- <ul class="post-list">
+    {% for post in posts %}
+    <li>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+
+        <p class="info">
+            {% if post.categories.count %}
+            {% set categoryLinks = post.categories | map(c => "<a href=\"#{c.url}\">#{c.name}</a>") | join(', ') %}
+
+            {{ 'rainlab.blog::lang.post.posted_byline' | trans({
+                        date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans),
+                        categories: categoryLinks
+                    }) }}
+            {% else %}
+            {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
+                        date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans)
+                    }) }}
+            {% endif %}
+        </p>
+        <p>Posted by {{ post.user.first_name }} {{ post.user.last_name }} BSIT-3R6</p>
+        <p class="excerpt">{{ post.summary | raw }}</p>
+    </li>
+    {% else %}
+    <li class="no-data">{{ __SELF__.noPostsMessage }}</li>
+    {% endfor %}
+</ul> -->
+
+<!-- {% if posts.lastPage > 1 %}
+<ul class="pagination">
+    {% if posts.currentPage > 1 %}
+    <li><a href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a>
+    </li>
+    {% endif %}
+
+    {% for page in 1..posts.lastPage %}
+    <li class="{{ posts.currentPage == page ? 'active' : null }}">
+        <a href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): page }) }}">{{ page }}</a>
+    </li>
+    {% endfor %}
+
+    {% if posts.lastPage > posts.currentPage %}
+    <li><a href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %} -->
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <h1 class="latestPosts">Latest Posts</h1>
+            {% for post in posts %}
+            <div class="post-preview">
+                <a href="{{ post.url }}">
+                    <h2 class="post-title">
+                        {{ post.title }}
+                    </h2>
+                    <h3 class="post-subtitle">
+                        {{ str_limit(post.summary|raw, 160) }}
+                    </h3>
+                </a>
+                <p class="post-meta">
+                    {% if post.categories.count %}
+                        {% set categoryLinks = post.categories | map(c => "<a href=\"#{c.url}\">#{c.name}</a>") | join(', ') %}
+
+                        {{ 'rainlab.blog::lang.post.posted_byline' | trans({
+                                    date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans),
+                                    categories: categoryLinks
+                                }) }}
+                    {% else %}
+                        {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
+                                    date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans)
+                                }) }}
+                    {% endif %}<br>
+                    Author {{ post.user.first_name }} {{ post.user.last_name }} BSIT-3R6
+                </p>
+            </div>
+            <hr>
+            {% endfor %}
+            <!-- Pager -->
+            <div class="clearfix">
+                <a class="btn btn-primary float-right" href="/blog">More Posts &rarr;</a>
+            </div>
+        </div>
+    </div>
+</div><br>    
+<hr>

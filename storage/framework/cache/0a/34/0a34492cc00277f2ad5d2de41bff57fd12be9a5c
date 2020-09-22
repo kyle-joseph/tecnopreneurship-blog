@@ -1,0 +1,121 @@
+1600661399a:1:{s:11:"default.htm";a:5:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2346:"<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Progven Blog</title>
+    <meta name="description" content="{{ this.page.meta_description }}" />
+    <meta name="title" content="{{ this.page.meta_title }}" />
+    <meta name="author" content="Kyle Joseph Timajo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Kyle Joseph Timajo" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3382ceab91.js" crossorigin="anonymous"></script>
+    <title>Progven</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ 'assets/vendor/bootstrap/css/bootstrap.css'|theme }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ 'assets/vendor/fontawesome-free/css/all.css'|theme }}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ 'assets/css/clean-blog.css'|theme }}" rel="stylesheet">
+    {% styles %}
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="layout-header">{% partial 'header' %}</header>
+
+    <!-- Content -->
+    <section id="layout-content">{% page %}</section>
+
+    <!-- Footer -->
+    <footer id="layout-footer">{% partial 'footer' %}</footer>
+
+    <!-- Scripts -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ 'assets/vendor/jquery/jquery.js'|theme }}"></script>
+    <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.bundle.js'|theme }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ 'assets/js/clean-blog.js'|theme }}"></script>
+
+    {% framework extras %}
+    {% scripts %}
+
+</body>
+
+</html>";s:5:"mtime";i:1600003904;s:6:"markup";s:2346:"<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Progven Blog</title>
+    <meta name="description" content="{{ this.page.meta_description }}" />
+    <meta name="title" content="{{ this.page.meta_title }}" />
+    <meta name="author" content="Kyle Joseph Timajo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Kyle Joseph Timajo" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3382ceab91.js" crossorigin="anonymous"></script>
+    <title>Progven</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ 'assets/vendor/bootstrap/css/bootstrap.css'|theme }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ 'assets/vendor/fontawesome-free/css/all.css'|theme }}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ 'assets/css/clean-blog.css'|theme }}" rel="stylesheet">
+    {% styles %}
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="layout-header">{% partial 'header' %}</header>
+
+    <!-- Content -->
+    <section id="layout-content">{% page %}</section>
+
+    <!-- Footer -->
+    <footer id="layout-footer">{% partial 'footer' %}</footer>
+
+    <!-- Scripts -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ 'assets/vendor/jquery/jquery.js'|theme }}"></script>
+    <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.bundle.js'|theme }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ 'assets/js/clean-blog.js'|theme }}"></script>
+
+    {% framework extras %}
+    {% scripts %}
+
+</body>
+
+</html>";s:4:"code";N;}}

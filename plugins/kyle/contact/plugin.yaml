@@ -1,0 +1,6 @@
+plugin:
+    name: 'kyle.contact::lang.plugin.name'
+    description: 'kyle.contact::lang.plugin.description'
+    author: kyle
+    icon: oc-icon-adjust
+    homepage: ''

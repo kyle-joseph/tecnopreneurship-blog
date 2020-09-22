@@ -1,0 +1,10 @@
+1600661399a:1:{s:13:"blog-post.htm";a:10:{s:8:"fileName";s:13:"blog-post.htm";s:7:"content";s:181:"title = "blog-post"
+url = "/blog/:page/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog-category"
+==
+{% component 'blogPost' %}";s:5:"mtime";i:1599902351;s:6:"markup";s:26:"{% component 'blogPost' %}";s:4:"code";N;s:5:"title";s:9:"blog-post";s:3:"url";s:17:"/blog/:page/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:13:"blog-category";}}}

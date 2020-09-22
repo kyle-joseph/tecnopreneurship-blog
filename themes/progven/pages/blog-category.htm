@@ -1,0 +1,43 @@
+title = "blog-category"
+url = "/blog/category/:slug/:page?"
+layout = "default"
+is_hidden = 0
+
+[customPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 4
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog-category"
+postPage = "blog-post"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog-category"
+==
+<!-- Page Header -->
+<header class="masthead" id="blogHead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>Blog Categories</h1>
+          <span class="subheading">Tecnopreneurship Blog</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10">
+      {% component 'customPosts' %}
+    </div>
+    <div class="col-lg-4 col-md-2">
+      {% component 'blogCategories' %}
+    </div>
+  </div>
+</div>

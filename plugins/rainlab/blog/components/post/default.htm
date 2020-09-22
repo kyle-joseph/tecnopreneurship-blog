@@ -1,0 +1,60 @@
+{% set post = __SELF__.post %}
+<!-- Page Header -->
+<header class="masthead" id="postHead">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{ post.title }}</h1>
+            <span class="meta">
+                    {% if post.categories.count %}
+                        {% set categoryLinks = post.categories | map(c => "<a href=\"#{c.url}\">#{c.name}</a>") | join(', ') %}
+
+                        {{ 'rainlab.blog::lang.post.posted_byline' | trans({
+                                    date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans),
+                                    categories: categoryLinks
+                                }) }}
+                    {% else %}
+                        {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
+                                    date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans)
+                                }) }}
+                    {% endif %}<br>
+                    Author {{ post.user.first_name }} {{ post.user.last_name }} BSIT-3R6
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+
+
+ <!-- Post Content -->
+ <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            {% if post.featured_images.count %}
+                <div class="featured-images text-center">
+                    {% for image in post.featured_images %}
+                        <p>
+                            <img
+                                data-src="{{ image.filename }}"
+                                src="{{ image.path }}"
+                                alt="{{ image.description }}"
+                                style="max-width: 100%" />
+                        </p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <div class="content post-article">{{ post.content_html | raw }}</div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+
+

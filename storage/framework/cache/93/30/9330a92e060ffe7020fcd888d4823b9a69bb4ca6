@@ -1,0 +1,58 @@
+1600661399a:1:{s:11:"contact.htm";a:10:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:815:"title = "contact"
+url = "/contact"
+layout = "default"
+is_hidden = 0
+
+[contactForm]
+==
+<!-- Page Header -->
+<header class="masthead" id="contactHead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>Contact Us</h1>
+          <span class="subheading">Have questions? I have answers.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as
+        possible!</p>
+      {% component 'contactForm' %}
+
+    </div>
+  </div>
+</div>";s:5:"mtime";i:1600585296;s:6:"markup";s:722:"<!-- Page Header -->
+<header class="masthead" id="contactHead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>Contact Us</h1>
+          <span class="subheading">Have questions? I have answers.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as
+        possible!</p>
+      {% component 'contactForm' %}
+
+    </div>
+  </div>
+</div>";s:4:"code";N;s:5:"title";s:7:"contact";s:3:"url";s:8:"/contact";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"contactForm";a:0:{}}}
